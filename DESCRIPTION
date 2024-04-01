@@ -1,0 +1,30 @@
+Package: BROME
+Title: Bayesian ROME framework for Establishing Measurement Equivalence
+Version: 0.0.0.9000
+Authors@R: 
+    person("Yichi", "Zhang", , "yzhang97@usc.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "https://orcid.org/0000-0002-4112-2106"))
+Description: This package implements the Bayesian Region of Measurement 
+    Equivalence (ROME) framework for visualizing and testing the combined impact 
+    of partial invariance on the group difference in observed scores. 
+    Under the proposed framework, researchers first compute the highest 
+    posterior density intervals (HPDIs)—which contain the most plausible 
+    values—for the expected group difference in observed test scores over a 
+    range of latent trait levels. By comparing the HPDIs with a predetermined 
+    range of values that is practically equivalent to zero (i.e., region of 
+    measurement equivalence), researchers can determine whether a test 
+    instrument is practically invariant.
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    testthat (>= 3.0.0),
+    blavaan,
+    rmarkdown,
+    knitr,
+    sirt,
+    lavaan,
+    tidyverse
+VignetteBuilder: knitr
