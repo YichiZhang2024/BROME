@@ -1,16 +1,3 @@
----
-output: github_document
----
-
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "man/figures/README-",
-  out.width = "100%"
-)
-```
-
 # BROME
 
 This package implements the Bayesian Region of Measurement Equivalence (ROME) framework for establishing measurement equivalence.
