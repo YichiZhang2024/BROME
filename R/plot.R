@@ -4,6 +4,7 @@
 #' @param df_post The expected total test scores for the group of interest
 #'
 #' @return A plot that shows the expected total test scores for the group of interest across latent ability level
+#' @export
 #'
 
 plot_expt <- function(df_post){
@@ -33,6 +34,7 @@ plot_expt <- function(df_post){
 #' @param ROME The preset region of measurement equivalence (ROME)
 #'
 #' @return A plot that shows the expected total test scores for the group of interest across latent ability level
+#' @export
 #'
 
 plot_exptDiff <- function(diff_post, ROME){

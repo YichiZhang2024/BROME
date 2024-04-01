@@ -17,6 +17,7 @@
 #'          \item{PDImax}{maximum length of HPDI for the expected group difference on total test scores}
 #'          \item{PDImean}{mean length of HPDI for the expected group difference on total test scores}
 #'          \item{decision}{decision on whether the scale is practically invariant across the group of interest}
+#' @export
 
 brome <- function(n_items, n_ninv, pninv, data, ROME_lim, eta_lim, eta_num){
   ## step1 compute ROME

@@ -6,6 +6,7 @@
 #' @param group The column for the grouping characteristics
 #'
 #' @return A single number
+#' @export
 #'
 
 pooled_sd_test <- function(items, group){
@@ -30,6 +31,7 @@ pooled_sd_test <- function(items, group){
 #'          \item{sd}{posterior standard deviation of the total test scores}
 #'          \item{ll}{lower bound of HPDI}
 #'          \item{ul}{upper bound of HPDI}
+#' @export
 #'
 
 exp_tot <- function(eta, si, sl, prob = 0.95) {
@@ -64,6 +66,7 @@ exp_tot <- function(eta, si, sl, prob = 0.95) {
 #'          \item{sd}{posterior standard deviation of the total test scores}
 #'          \item{ll}{lower bound of HPDI}
 #'          \item{ul}{upper bound of HPDI}
+#' @export
 #'
 
 exp_diff_cum <- function(eta, si, sl, sil, prob = 0.90) {

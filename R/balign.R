@@ -12,7 +12,7 @@
 #'          \item{lambda}{aligned factor loadings estimates}
 #'          \item{n_gps}{number of groups}
 #'          \item{nu}{aligned intercepts estimates}
-#'
+#' @export
 
 balign <- function(data, n_items, n_ninv, n_gps = 2, svp = FALSE){
   bcfa_res <- fit_true(data, n_items, n_ninv, n_gps = 2, svp)

@@ -1,3 +1,8 @@
+#' @importFrom blavaan bcfa
+#' @importFrom sirt invariance.alignment
+#' @importFrom lavaan cfa
+NULL
+
 #' Bayesian Region of Measurement Equivalence (ROME) with alignment
 #'
 #' \code{abrome} implements the Bayesian ROME framework with alignment (ABROME)
@@ -9,7 +14,6 @@
 #' @param ROME_lim Preset Region of Measurement Equivalence (ROME)
 #' @param eta_lim Range of latent ability
 #' @param eta_num Number of latent ability level
-#'
 #' @return A vector of length 6.
 #'          \item{ROME}{preset ROME}
 #'          \item{mean}{posterior mean of the expected group difference on total test scores}
@@ -17,6 +21,8 @@
 #'          \item{PDImax}{maximum length of HPDI for the expected group difference on total test scores}
 #'          \item{PDImean}{mean length of HPDI for the expected group difference on total test scores}
 #'          \item{decision}{decision on whether the scale is practically invariant across the group of interest}
+#'
+#' @export
 
 abrome <- function(pninv, n_items, n_ninv, data, ROME_lim, eta_lim, eta_num){
   ## step1 compute ROME

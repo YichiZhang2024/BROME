@@ -21,6 +21,7 @@
 #'          \item{PDImean}{mean length of HPDI for the expected group difference on total test scores}
 #'          \item{decision}{decision on whether the scale is practically invariant across the group of interest}
 #'
+#' @export
 
 bairome <- function(pninv, n_items, n_ninv, data, ROME_lim, eta_lim, eta_num, gp_labels,
                         n_gps = 2){
